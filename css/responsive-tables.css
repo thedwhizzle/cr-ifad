@@ -1,0 +1,133 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+table 
+{ 
+	width: 50%; 
+	border-spacing: 0; 
+}
+table tbody 
+{ 
+	overflow-y: hidden; 
+	overflow: scroll;
+}
+
+table td, table th { 
+	padding: 12px 12px; 
+	text-align: left;
+	border:1px solid #eee;
+	border-right: none; 
+	border-left: none;
+}
+
+table th { 
+font-size:1em;
+color:#ffffff;
+font-weight: 700;
+text-align: left;
+background:rgba(2, 23, 37, .95); 
+padding:15px; 
+border:1px solid #0b6699;
+border-right: none; 
+border-left: none;
+}
+
+.tableCol tr td:nth-child(odd){ 
+		background: #fafafa;
+	}
+.tableCol tr td:nth-child(even){
+		background: #fff;
+	}
+
+/* Mobile */
+@media only screen and (max-width: 767px) { 
+
+table th 
+{ 
+	font-size:.9em;
+	padding:12px;
+}
+
+	table.responsive 
+	{
+		margin-bottom: 0; 
+		height:100%; 
+	}
+	
+	.pinned 
+	{ 
+		position: absolute; 
+		left: 0; 
+		top: 0; 
+		background: #fff; 
+		width: 30%; 
+		height:100%; 
+		overflow-x: scroll;
+	}
+	.pinned table 
+	{ 
+		border-right: none; 
+		border-left: none; 
+		width: 100%; 
+	}
+	.pinned table th, .pinned table td 
+	{ 
+		white-space: normal;
+	}
+	.pinned td:last-child 
+	{ 
+		border-bottom: 0; 
+	}
+	
+	div.table-wrapper 
+	{ 
+		position: relative; 
+		overflow: hidden;
+		border-right: 1px solid #ccc; 
+		height:100%;
+	}
+	div.table-wrapper div.scrollable 
+	{ 
+		margin-left: 30%; 
+	}
+	div.table-wrapper div.scrollable 
+	{ 
+		overflow: scroll; 
+		overflow-y: hidden; 
+		height: 100%; 
+		-webkit-overflow-scrolling: touch;}	
+	
+	table.responsive td, table.responsive th { 
+		position: relative; 
+		white-space: nowrap; 
+		overflow: hidden; 
+		text-align:center;
+		 }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td 
+	{ 
+		display: none;
+	}
+	
+	#current_wk_head
+	{	
+		height:450px;
+	}
+
+	#names {
+		height:5%;
+	}
+}
+
+
